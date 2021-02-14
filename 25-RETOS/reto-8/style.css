@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(20, 19, 19);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns:repeat(20, 15px); 
+    grid-template-rows:repeat(25, 15px);
+    width: 305px;
+    height: 380px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .square {
+    border: solid rgb(20, 19, 19);
+    background: rgb(73, 73, 78);
+    width: 15px;
+    height: 15px;
+    margin: 0px;
+    transition: 1.5s ease;
+    box-shadow: 0 0 1px rgb(73, 73, 78);
+  }
+  
+  .square:hover {
+    transition-duration: 0s;
+  }

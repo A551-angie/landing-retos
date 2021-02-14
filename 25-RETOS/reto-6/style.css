@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(192, 167, 192);
+    justify-content: center;
+    display: flex;
+    padding-top: 15%;
+  }
+  .fill {
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    position: relative;
+    height: 156px;
+    width: 156px;
+    /*border: solid 1px rgb(34, 25, 25);*/
+    cursor: pointer;
+  }
+  .empty {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border: solid 2px rgb(58, 49, 49);
+    background-color: white;
+  } 
+  
+  
+  .hold {
+    border: solid 4px rgb(48, 36, 36);
+  }
+  
+  .hovered {
+    border-style: dashed;
+    background: rgb(100, 98, 98) ;
+  }
+  .invisible{
+      display: none;
+      
+  }
+  
+  @media (max-width: 800px){
+    body {
+      background: rgb(192, 167, 192);
+      display: flex;
+      flex-flow: row;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    .container{
+      display: flex;
+      display:-webkit-flex;
+      flex-direction: column;/*coloca en columna*/
+      height: 500px;
+      width: 400px;
+      margin: 0px;
+      margin-bottom: 2px;
+      justify-content: center;
+      align-items: center;
+    
+      
+    }
+    .empty {
+      height: 80px;
+      width: 80px;
+      margin: 10px;
+      border-width: solid 2px rgb(58, 49, 49);
+      background-color: white;
+    
+      }
+    
+     .fill {
+      background-color:  linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+      position: relative;
+      width: 77px;
+      height: 77px;
+      cursor: pointer;/*me permite colocar el cursos para mover*/
+     }
+     .hold {
+      border:solid 4px rgb(48, 36, 36);
+      }
+      .hovered {
+        background:rgb(100, 98, 98);
+        border-style: dashed;
+      }
+      .invesible{
+        display: none;
+      }
+     
+    
+      
+
+  }
+   
+   
